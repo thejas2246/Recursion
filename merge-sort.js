@@ -1,4 +1,4 @@
-function mergeSort(array, left, right) {
+function mergeSort(array, left = 0, right = array.length - 1) {
     if (left >= right) {
         return 0;
     } else {
@@ -37,6 +37,6 @@ function merge(array, l, m, r) {
     }
 }
 
-let numberArray = [3, 2, 1, 13, 8, 5, 0, 1];
-mergeSort(numberArray, 0, numberArray.length - 1);
+let numberArray = [3, 9, 1, 6, 4];
+mergeSort(numberArray);
 console.log(numberArray);
